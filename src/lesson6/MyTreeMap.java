@@ -50,7 +50,7 @@ public class MyTreeMap<K extends Comparable<K>, V> {
             return true;
         }
         return height(node.left) - height(node.right) >= -1 &&
-                height(node.left) - height(node.right) <= 1;
+                height(node.left) - height(node.right) <= 1 && isBalance(node.left) && isBalance(node.right);
     }
 
     public int size() {
