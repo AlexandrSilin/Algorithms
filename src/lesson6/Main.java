@@ -15,6 +15,6 @@ public class Main {
                 balanced++;
             }
         }
-        System.out.println("Balanced trees: " + balanced / 100000 * 100 + "%");
+        System.out.println("Balanced trees: " + (double)balanced / 100000 * 100 + "%");
     }
 }
